@@ -22,7 +22,7 @@ node {
     }
 
     stage('Build Docker Image') {
-        buildImage = docker.build("hubtea/spring-cloud-hystrix-dashboard:${commitHash}")
+        buildImage = docker.build("dakensin/spring-cloud-hystrix-dashboard:${commitHash}")
     }
 
 
